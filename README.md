@@ -1,2 +1,2 @@
-# AIMS_Rwanda
-Biodiversity Informatics: creating, accessing and analysing biodiversity data
+# Biodiversity Informatics
+Drowning in data, thirsty for information and starved for understanding: A biodiversity information hub for cooperative environmental monitoring in South Africa
