@@ -154,7 +154,7 @@ padding: 0px 5px 0px 5px;
 
 #content .cols {
   /*padding: 0px 10px 0px 10px; */
-  column-count: 2;
+  column-count: 1;
 }
 
 #refs {
