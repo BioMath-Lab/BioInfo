@@ -63,11 +63,18 @@
  </form>
  
 <script>
-			function submitForm() {
-            document.bioForm.submit();
-            document.bioForm.reset();
-            }
-        </script>
+function submitForm() {
+   // Get the first form with the name
+   // Usually the form name is not repeated
+   // but duplicate names are possible in HTML
+   // Therefore to work around the issue, enforce the correct index
+   var frm = document.getElementsByName('bioForm')[0];
+   frm.submit(); // Submit the form
+   frm.reset();  // Reset all form data
+   return false; // Prevent page refresh
+}
+</script>
+
 <p>This symposium is funded by the <a href="https://nithecs.ac.za/">National Institute for Theoretical and Computational Sciences</a> (NITheCS). 
 Limited funds are available to facilitate South African participants for travel and accommodation. 
 For funding application, please submit your special issue Abstract at (special issue hyperlink) by 20 June 2022 for consideration 
