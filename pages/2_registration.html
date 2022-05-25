@@ -20,15 +20,46 @@
 
 <h2>BOOKDOWN - BIODIVERSITY INFORMATICS</h2>
 
-<p>For registration, please email (to the new gmail) us the following info with subject 'Attend-Surname-AbstractTitle':
+<p>Please fill in the form below to register for the conference:
 
-<ul>
-<li>Select the length of your talk: 5 min | 15 min | 30 min</li>
-<li>Title of your presentation</li>
-<li>Full names and affiliations</li>
-<li>Full names and affiliations</li>
-<li>Summary (~75 words)</li>
-</ul>
+<!--<form action="insert.php" method="POST">-->
+ <form action="mailto:sandra@biogis.co.za" method="get" enctype="text/plain">
+   <table>
+   <tr>
+    <td>Full Names :</td>
+    <!--<td><input type="text" name="name" style="width: 450px;height: 18px;" required></td>-->
+	<td><input type="text" name="name" required></td>
+   </tr>
+   <tr>
+    <td>Affiliations :</td>
+    <td><input type="text" name="affiliation" required></td>
+   </tr>
+   <tr>
+    <td>Email :</td>
+    <td><input type="email" name="email" required></td>
+   </tr> 
+   <tr>
+    <td>Length of talk :</td>
+    <td>
+     <input type="radio" name="talk" value="5" required>5 min
+     <input type="radio" name="talk" value="15" required>15 min
+	 <input type="radio" name="talk" value="30" required>30 min
+    </td>
+   </tr>   
+   <tr>
+    <td>Presentation title :</td>
+    <td><textarea name="title" wrap="soft" style="width:450px;height:80px;" required> </textarea></td>
+   </tr> 
+   <tr>
+    <td>Summary (~75 words) :</td>
+    <td><textarea name="abstract" wrap="soft" maxlength="75" style="width:450px;height:180px;" required> </textarea></td>
+   </tr> 
+   <tr>
+   
+    <td><input type="submit" value="Submit" name="submit"></td>
+   </tr>
+  </table>
+ </form>
 
 <p>This symposium is funded by the <a href="https://nithecs.ac.za/">National Institute for Theoretical and Computational Sciences</a> (NITheCS). 
 Limited funds are available to facilitate South African participants for travel and accommodation. 
