@@ -13,17 +13,17 @@
 <div id="wrap">
 <div id="header">
 <h1>BIODIVERSITY INFORMATICS</h1>
-<h1>Special journal issue and workshop</h1>
+<h1>Journal Special Issue and Symposium</h1>
 </div>
 
 <div id="content">
 
-<h2>BOOKDOWN - BIODIVERSITY INFORMATICS</h2>
+<h2>BIODIVERSITY INFORMATICS SYMPOSIUM REGISTRATION</h2>
 
-<p>Please fill in the form below to register for the conference:
+<p>Please fill in the form below to register for the symposium:
 
 <!--<form action="insert.php" method="POST">-->
- <form action="mailto:sandra@biogis.co.za" method="post" enctype="text/plain">
+ <form id="bioForm" action="mailto:sandra@biogis.co.za" method="post" enctype="text/plain">
    <table>
    <tr>
     <td>Full Names :</td>
@@ -57,16 +57,17 @@
    <tr>
    
     <td><input type="submit" value="Submit" name="submit" onclick="submitForm()"></td>
-	<script>
-            function submitForm() {
-            document.contact-form.submit();
-            document.contact-form.reset();
-            }
-        </script>
+	
    </tr>
   </table>
  </form>
-
+ 
+<script>
+			function submitForm() {
+            document.bioForm.submit();
+            document.bioForm.reset();
+            }
+        </script>
 <p>This symposium is funded by the <a href="https://nithecs.ac.za/">National Institute for Theoretical and Computational Sciences</a> (NITheCS). 
 Limited funds are available to facilitate South African participants for travel and accommodation. 
 For funding application, please submit your special issue Abstract at (special issue hyperlink) by 20 June 2022 for consideration 
