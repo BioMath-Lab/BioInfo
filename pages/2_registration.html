@@ -20,10 +20,17 @@
 
 <h2>BIODIVERSITY INFORMATICS SYMPOSIUM REGISTRATION</h2>
 
-<p>Please fill in the form below to register for the symposium:
+<p>This symposium is funded by the <a href="https://nithecs.ac.za/" target="_blank">National Institute for Theoretical and Computational Sciences</a> (NITheCS). 
+Limited funds are available to facilitate South African participants for travel and accommodation. 
+<br>For funding application, please <a href="https://www.frontiersin.org/research-topics/34282/biodiversity-informatics-building-a-lifeboat-for-high-functionality-data-to-decision-pipeline?utm_source=F-RTM&utm_medium=TED1&utm_campaign=PRD_TED1_T1_RT-TITLE">
+SUBMIT YOUR ABSTRACT</a> to the Special Issue by 20 June 2022 for consideration 
+and send an email with subject 'Fund-Surname-AbstractTitle' to <a href="mailto:stellenbosch.bioinfo@gmail.com">stellenbosch.bioinfo@gmail.com</a>. Funded participants will be encouraged to submit 
+their final manuscripts to the special issue by 25 Nov 2022 with the Article Processing Cost (APC) waived.
+<p><b>PLEASE FILL IN THE FORM BELOW TO COMPLETE YOUR REGISTERATION FOR THE SYMPOSIUM:</b>
 
 <!--<form action="insert.php" method="POST">-->
- <form id="bioForm" action="mailto:sandra@biogis.co.za?subject=Register - Biodiversity Symposium" method="post" enctype="text/plain">
+ <form id="bioForm" action="mailto:sandra@biogis.co.za?subject=Register - Biodiversity Symposium" method="post" enctype="text/plain" 
+ onSubmit="alert('Thank you for your registration. Please click send to complete');">
    <table>
    <tr>
     <td>Full Names :</td>
@@ -56,30 +63,14 @@
    </tr> 
    <tr>
    
-    <td><input type="submit" value="Submit" name="submit" onclick="submitForm()"></td>
+    <td><input type="reset" value="Reset" name="resett" onclick="myReset()"></td>
+	<td><input type="submit" value="Submit" name="submit" onclick="submitForm()"></td>
 	
    </tr>
   </table>
  </form>
  
-<script>
-function submitForm() {
-   // Get the first form with the name
-   // Usually the form name is not repeated
-   // but duplicate names are possible in HTML
-   // Therefore to work around the issue, enforce the correct index
-   var frm = document.getElementsByName('bioForm')[0];
-   frm.submit(); // Submit the form
-   frm.reset();  // Reset all form data
-   return false; // Prevent page refresh
-}
-</script>
 
-<p>This symposium is funded by the <a href="https://nithecs.ac.za/">National Institute for Theoretical and Computational Sciences</a> (NITheCS). 
-Limited funds are available to facilitate South African participants for travel and accommodation. 
-For funding application, please submit your special issue Abstract at (special issue hyperlink) by 20 June 2022 for consideration 
-and send an email with subject 'Fund-Surname-AbstractTitle' to <a href="mailto:stellenbosch.bioinfo@gmail.com">stellenbosch.bioinfo@gmail.com</a>. Funded participants will be encouraged to submit 
-their final manuscripts to the special issue by 25 Nov 2022 with the Article Processing Cost (APC) waived. 
 
 </div>
 
@@ -104,6 +95,25 @@ their final manuscripts to the special issue by 25 Nov 2022 with the Article Pro
 </div>
 
 </div>
+
+<!--<script>
+function submitForm() {
+   // Get the first form with the name
+   // Usually the form name is not repeated
+   // but duplicate names are possible in HTML
+   // Therefore to work around the issue, enforce the correct index
+   var frm = document.getElementsByName('bioForm')[0];
+   frm.submit(); // Submit the form
+   frm.reset();  // Reset all form data
+   return false; // Prevent page refresh
+}
+</script>-->
+
+<script>
+function myReset() {
+  document.getElementById('bioForm').reset();
+}
+</script>
 
 </body>
 </html>
